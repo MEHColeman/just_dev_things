@@ -1,0 +1,33 @@
+Upgrading to Ruby 1.9.3
+
+Familiarise yoyurself with 1.9.3 changes
+Watch the video
+http://slideshow.rubyforge.org/ruby19.html#1
+http://techtime.getharvest.com/blog/harvest-is-now-on-ruby-1-dot-9-3
+
+The more test coverage you have, the better!
+
+Run all your ruby commands with
+> ruby -w
+
+Create a second gemset with a 1.9.3 suffix.
+jruby 1.7.0 onwards defaults to 1.9. Ensure your .jrubyrc, or wherever
+you specify the compatibility mode is set to the appropriate mode for
+each dev environment. Also, your jvm will need to be greater than Java
+7, update 2.
+Update all the gems that need to be updated for 1.9.3 compatibility.
+
+Try out one9 gem:
+http://tagaholic.me/2011/03/05/one9-upgrade-to-ruby-19-now.html
+
+You can run one9 on the old gemset, make the changes, then switch to the new gemset to test.
+
+You will need to upgrade mysql gem to mysql2!
+Run the tests, upgrade the gems & plugins.
+
+Tests will find many issues.
+Encoding is a major change!
+
+http://blog.grayproductions.net/articles/understanding_m17n
+
+
