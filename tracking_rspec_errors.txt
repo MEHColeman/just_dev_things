@@ -1,0 +1,14 @@
+Sometimes rspec can fuck up due to previous test side effects.
+To identify this, any narrow down the problem, there are a couple of
+things yoyu can do.
+You can rspec directories.
+> rspec spec/integration
+
+Single specs
+> rspec spec/integration/account_store_reactivate_spec.rb
+
+You can change the format to help see where the error first occurs:
+> rspec -f doc spec/integration/* | less
+
+Or select the specs to run if you think you've found the culprit
+rspec `find spec/integration/ -name '*rb' | grep -v create_spec`

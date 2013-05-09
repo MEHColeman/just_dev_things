@@ -1,0 +1,3 @@
+create a .rvmrc, Gemfile, spec directory with a standard structure,
+feature directory, if appropriate.
+set up guard files & watch as the magic happens.
