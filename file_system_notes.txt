@@ -1,0 +1,5 @@
+/usr is for usr installed stuff
+/local is for stuff that's installed manually, not with a package
+manager.
+/share is for non binary stuff
+/etc is for configuration

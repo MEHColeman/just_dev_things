@@ -1,0 +1,5 @@
+You can use
+  sudo lsof +L1 to find files on the system with 0 file handles that are
+still open. This might happen if a log file got rotated and the old file
+handle is lost. You can them find the file through the /proc directory:
+/proc/<pid>/fd/<id> 
