@@ -1,5 +1,11 @@
+check these repos are pushed:
+~/.dotfiles
+~/notes
+~/bin
+
 stop Dropbox
 stop btsync
+(can run purge_priv)
 
 remove btsync from qqq
 remove dev bw directory
