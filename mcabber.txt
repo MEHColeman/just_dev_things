@@ -1,1 +1,2 @@
 To start a chat with just one person
+/room privmsg NAME MESAGE
