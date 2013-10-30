@@ -7,4 +7,4 @@ remove Dropbox directory
 remove Downloads directory
 ditto on /mnt/md0/store/mark
 
-
+sudo rm -rf /tmp/*
