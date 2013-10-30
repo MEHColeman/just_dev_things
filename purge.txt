@@ -1,0 +1,10 @@
+stop Dropbox
+stop btsync
+
+remove btsync from qqq
+remove dev bw directory
+remove Dropbox directory
+remove Downloads directory
+ditto on /mnt/md0/store/mark
+
+
