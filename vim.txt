@@ -1,0 +1,8 @@
+:set textwidth=79 to automatically insert lines breaks after 79 characters
+gq  to wrap the text on the current line
+
+:set wrap linebreak nolist  to display long lines as multiple screen lines
+
+:setlocal spell  turn on spell-checking
+:setlocal spell spelllang=en_gb   specify language
+zg   add the highlighted word to the dictionary
