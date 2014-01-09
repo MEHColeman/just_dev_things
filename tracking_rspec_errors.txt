@@ -1,6 +1,6 @@
 Sometimes rspec can fuck up due to previous test side effects.
 To identify this, any narrow down the problem, there are a couple of
-things yoyu can do.
+things you can do.
 You can rspec directories.
 > rspec spec/integration
 
