@@ -9,3 +9,5 @@ gq  to wrap the text on the current line
 ]s move to next spelling mistake
 zg   add the highlighted word to the dictionary
 z=   suggest words for word under cursor
+
+:sudowrite   write protected file (via eunuch plugin)
