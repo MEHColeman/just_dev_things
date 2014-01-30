@@ -4,5 +4,8 @@ gq  to wrap the text on the current line
 :set wrap linebreak nolist  to display long lines as multiple screen lines
 
 :setlocal spell  turn on spell-checking
+:set nospell   turn off spell-checking
 :setlocal spell spelllang=en_gb   specify language
+]s move to next spelling mistake
 zg   add the highlighted word to the dictionary
+z=   suggest words for word under cursor
