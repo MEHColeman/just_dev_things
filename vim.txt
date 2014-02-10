@@ -11,3 +11,15 @@ zg   add the highlighted word to the dictionary
 z=   suggest words for word under cursor
 
 :sudowrite   write protected file (via eunuch plugin)
+
+:sav   save a file with a new name, continue editing the new name
+:w     save a file with a new name, continue editing the old name
+:w %:h/filename  save filename in home directory of current file
+
+Tabs:
+:tabnew   create a new tab
+:tabclose close tab
+{i}gt   go to next tab
+gT   go to previous tab
+ctrl-w T  move window to new tab
+:tabdo <: command, e.g. %s/foo/bar/g> do command in all tabs
