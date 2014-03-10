@@ -23,3 +23,12 @@ Tabs:
 gT   go to previous tab
 ctrl-w T  move window to new tab
 :tabdo <: command, e.g. %s/foo/bar/g> do command in all tabs
+
+Folds:
+:set fdm=syntax
+
+zc, zo, za  - close, open, toggle fold at cursor
+zC, zO, zA  - close, open, toggle all folds at cursor
+
+zr, zR  - open one more (or all) level of folds throughout the buffer
+zm, zM  - close one (all) level of folds throughout the buffer
