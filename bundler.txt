@@ -1,0 +1,25 @@
+My new gems / ruby environment strategy:
+
+I'm now using rbenv to manage ruby.
+
+
+I've configured bundle (using bundle config --global path vendor/bundler)
+to install all gems in a local vendor directory.
+
+Also, add an alias for bundle install to bundle install --standalone --binstubs bundle/bin
+This adds binstubs in a local bundle/bin directory that sets the paths up
+correctly so that you don't need to load bundler (i.e. bundle exec) and
+you don't need to load bundler.
+
+
+Strategy for gemfile dependency specification:
+During initial development, keep as loose as possible.
+At some point, you'll need to firm up the dependencies, so that once live,
+you can control when gems are updated and test properly.
+
+If developing a gem, things are different: you want it to work with as many
+other gem versions as possible.
+Assume that the gem is using semantic versioning, and use the lowest version
+that contains the api features you need.
+Only increase the requirement if a bug stops the gem from working.
+
