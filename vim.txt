@@ -1,34 +1,53 @@
-:set textwidth=79 to automatically insert lines breaks after 79 characters
-gq  to wrap the text on the current line
+# Vim Notes
+
+## Text
+  :set textwidth=79 to automatically insert lines breaks after 79 characters
+  gq  to wrap the text on the current line
 
 :set wrap linebreak nolist  to display long lines as multiple screen lines
 
-:setlocal spell  turn on spell-checking
-:set nospell   turn off spell-checking
-:setlocal spell spelllang=en_gb   specify language
-]s move to next spelling mistake
-zg   add the highlighted word to the dictionary
-z=   suggest words for word under cursor
+## Spelling
+  :setlocal spell  # turn on spell-checking
+  :set nospell     # turn off spell-checking
+  :setlocal spell spelllang=en_gb   # specify language
+  ]s               # move to next spelling mistake
+  zg               # add the highlighted word to the dictionary
+  z=               # suggest words for word under cursor
 
-:sudowrite   write protected file (via eunuch plugin)
+## Writing files
+  :sudowrite   write protected file (via eunuch plugin)
 
-:sav   save a file with a new name, continue editing the new name
-:w     save a file with a new name, continue editing the old name
-:w %:h/filename  save filename in home directory of current file
+  :sav   # save a file with a new name, continue editing the new name
+  :w     # save a file with a new name, continue editing the old name
+  :w %:h/filename  # save filename in home directory of current file
 
-Tabs:
-:tabnew   create a new tab
-:tabclose close tab
-{i}gt   go to next tab
-gT   go to previous tab
-ctrl-w T  move window to new tab
-:tabdo <: command, e.g. %s/foo/bar/g> do command in all tabs
+## Tabs
+  :tabnew   # create a new tab
+  :tabclose # close tab
+  {i}gt     # go to next tab
+  gT        # go to previous tab
+  ctrl-w T  # move window to new tab
+  :tabdo <: command, e.g. %s/foo/bar/g> do command in all tabs
 
-Folds:
-:set fdm=syntax
+## Folds
+  :set fdm=syntax
 
-zc, zo, za  - close, open, toggle fold at cursor
-zC, zO, zA  - close, open, toggle all folds at cursor
+  zc, zo, za  - close, open, toggle fold at cursor
+  zC, zO, zA  - close, open, toggle all folds at cursor
 
-zr, zR  - open one more (or all) level of folds throughout the buffer
-zm, zM  - close one (all) level of folds throughout the buffer
+  zr, zR  - open one more (or all) level of folds throughout the buffer
+  zm, zM  - close one (all) level of folds throughout the buffer
+
+## Windows
+  ctrl-w    # window operation
+    s       # split horizontally
+    v       #split vertically
+
+## CTAGS
+  ,b              # tagbar
+  ,.              # ctrlP browser
+  ctrl-}          # navigate to tag under cursor
+  :tag <name>     # navigate to named tag
+  :pop            # pop navigation stack
+  :tnext
+  :tprev          # navigate through multiple definitions
