@@ -1,5 +1,15 @@
-git stash save "message"
-git stash list
-git stash pop <index>
-or git stash apply (doesn't remove stash)
-git stash drop <index>
+# Git
+
+## Stashing
+
+  git stash save "message"
+  git stash list
+  git stash pop <index>
+    or git stash apply (doesn't remove stash)
+  git stash drop <index>
+
+## Logs
+
+  git shlg      # pretty, compact log
+  git lg        # pretty, longer log
+  git pl        # pretty log
