@@ -13,3 +13,17 @@
   git shlg      # pretty, compact log
   git lg        # pretty, longer log
   git pl        # pretty log
+
+## Interactive rebasing
+
+  git rebase -i <ref to root of rebase>
+Then, pick edit or squash (onto previous) commits. Delete the line to remove
+You can also change the order of commits.
+Editing allows you to further --amend the message, or split a commit in two:
+  git reset HEAD^
+  git add <half the files>
+  git commit
+  git add <other half>
+  git commit
+  git rebase --continue
+
