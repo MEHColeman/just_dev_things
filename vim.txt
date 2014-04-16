@@ -51,3 +51,10 @@
   :pop            # pop navigation stack
   :tnext
   :tprev          # navigate through multiple definitions
+
+##  Comments
+NERDCommenter is good for this
+  ,c              # (un)comment selection
+  ,cc             # comment current line
+  ,cn             # comment current line, force nesting
+  ,ci             # invert selection comments
