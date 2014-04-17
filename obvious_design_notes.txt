@@ -1,0 +1,10 @@
+# Obvious Design Notes
+Obvious tries to separate concerns and decouple the common MVC architecture.
+Entities model application logic without the ORM functionality.
+Actions are single-method objects.
+Contracts are checks that data is as expected.
+
+Jacks are conduits for data persistence and exchange (via plugs)
+
+Delivery is entirely independent, and could be via cli, rails, sinatra, etc.
+
