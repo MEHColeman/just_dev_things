@@ -58,3 +58,13 @@ NERDCommenter is good for this
   ,cc             # comment current line
   ,cn             # comment current line, force nesting
   ,ci             # invert selection comments
+
+## Macros
+  q<letter>       # start recording
+  q               # finish recording
+  @<letter>       # run macro
+  @@              # repeat macro
+
+### Editing macros
+  "<letter>p      # paste macro buffer
+  0"<letter>y$    # copy current line into macro
