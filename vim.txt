@@ -68,3 +68,19 @@ NERDCommenter is good for this
 ### Editing macros
   "<letter>p      # paste macro buffer
   0"<letter>y$    # copy current line into macro
+
+## sed things
+to delete all lines containing "profile"
+:g/profile/d
+
+delete all lines that are empty or that contain only whitespace:
+:g/^\s*$/d
+
+To delete all lines that do not contain a pattern, use g! or the equivalent v,
+like this command to delete all lines that are not comment lines in a Vim
+script:
+:g!/^\s*"/d
+:v/^\s*"/d
+
+delete all lines except those that contain "error" or "warn" or "fail"
+:v/error\|warn\|fail/d
