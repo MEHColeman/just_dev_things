@@ -1,0 +1,43 @@
+# Gemfiles: What constraints to use and when
+You can specify various different constraints in your gemfiles
+~>                 # the pessimistic version constraint
+=, >, <, >=        # obvious, right?
+
+Before you go any further, make sure you know about semantic versioning, but
+be aware that not everyone uses it correctly (or at all).
+
+The pessimistic constraint says that you can update the most minor version
+provided only.
+
+So, ~>1.2.3 means that you 1.2.3, 1.2.4, 1.2.5, 1.2.6 would be available, but
+not 1.3.0
+
+~1.2 means that 1.2 and all minor versions, 1.3 and all minor versions, etc
+are available, but not 2.0
+
+There is plenty of very vehement advice on when to use what constraints and
+when. Here's what I think: It depends.  If you are writing a gem, or library
+that will be used in many places, you probably want your code to run in as
+wide a variety of configurations as possible.  Therefore you will want to use
+a loose constraint in your gemfile, and only tighten it when you have to (e.g.
+for security fixes, etc)
+
+
+If your code is a stand-alone piece of software, you have a different set of requirements.
+In this case, you want a known configuration that you have tested and arn confident that it works in production.
+Often, a more cautious approach is required
+
+## The Gemfile and Gemfile.lock
+The when bundler does its thing, it creates a
+dependency tree from the Gemfile and creates a Gemfile.lock file that contains
+the dependency requirements and the specific versions of the gems is has
+bundled.  The information in the Gemfile.lock allows you to reproduce the gem
+environment (in terms of gem versions) precisely, which is essetial for
+(regression) testing.
+
+## Recommended approach
+### For standalone software
+Keep your gemfile as loose as possible. Add restrictions when necessary. Assume semantic versioning, but be careful.
+Keep you Gemfile.lock under version control.
+
+### For writing gems & libraries
