@@ -1,3 +1,24 @@
-create a .rvmrc, Gemfile, spec directory with a standard structure,
+create a .ruvy-version and .ruby-gemset , Gemfile, spec directory with a standard structure,
 feature directory, if appropriate.
 set up guard files & watch as the magic happens.
+
+Use minitest by preference, then rspec.
+haml & sass are useful
+factory_girl for mocks?
+
+
+
+The following gems will help monitor code quality:
+newrelic for rails apps
+rails_best_practices
+
+metric_fu
+simplecov
+rcov
+reek
+flog
+cane
+flay
+
+
+also, code climate

@@ -1,0 +1,7 @@
+Things to do while coding:
+Open some handy cheatsheet pages:
+The vim notes page.
+https://github.com/bbatsov/ruby-style-guide
+https://www.anchor.com.au/wp-content/uploads/rspec_cheatsheet_attributed.pdf
+
+The git process notes
