@@ -1,0 +1,46 @@
+# Tmux
+
+## Attaching
+tmux new -s session_name
+
+tmux ls
+tmux a <number>
+tmux a -t session_name
+ctrl-t $ session_name # name current session
+ctrl-t : <command>
+         list-sessions
+         kill-session -t session_name
+
+## Shortcuts
+
+I have my tmux key bound to ctrl-t, so:
+
+ctrl-t r = reload tmux conf
+       [ = go into copy mode
+       ? = show shortcuts
+
+## Panes
+
+ctrl-t s = split horizontal
+       v = split vertical
+       | = arrange panes vertically
+       - = arrange panes horizontally
+       x = kill pane
+
+alt-arrow = resize panes
+ctrl-alt-arrow = resize panes in steps of 5
+
+Also, these don't require the leader:
+ctrl-a    select previous pane
+ctrl-arrow    change pane
+
+### Moving panes
+ctrl-t {}  left and right
+
+## Windows
+ctrl-t c   new window
+       w   list windows
+       f   find windows
+       ,   name window
+       &   kill window
+        0-9 go to window
