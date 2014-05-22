@@ -1,0 +1,6 @@
+## Monthly
+Vundler BundleUpdate
+
+
+## Notes
+Oh-my-zsh updates itself weekly.
