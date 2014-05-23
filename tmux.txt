@@ -44,3 +44,14 @@ ctrl-t c   new window
        ,   name window
        &   kill window
         0-9 go to window
+
+## Copy and paste
+ctrl-t [  enter copy mode
+space     start copying
+enter     copy buffer and exit mode
+ctrl-t ]  paste buffer
+       #  List all paste buffers.
+       -  Delete the most recently copied buffer of text.
+       =  Choose which buffer to paste interactively from a list.
+
+
