@@ -44,6 +44,7 @@ ctrl-t c   new window
        ,   name window
        &   kill window
         0-9 go to window
+set-option -p allow-rename off
 
 ## Copy and paste
 ctrl-t [  enter copy mode
