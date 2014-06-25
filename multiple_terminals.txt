@@ -1,11 +1,11 @@
 You can use dvtm and a nice screen like terminal window manager. It is
 great if you want to run the same command on a bunch of different
-screens and view the results in seperate windows.
+screens and view the results in separate windows.
 
 dvtm
 ctrl-g is the meta key
-meta-w open window
+meta-c open window
 meta-a toggle sending stdin to all maximised windows
-meta-. minimise a mindow
+meta-. minimise a window
 meta-<enter> maximise a window
 meta-j, meta-k, meta-[1-9] change windows
