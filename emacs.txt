@@ -1,0 +1,11 @@
+# Emacs
+
+## Movement
+C-p C-n C-b C-f to move one line/character
+M-b M-f to move one word
+
+C-v M-v to move down or up a page
+C-l to centre on current line
+
+
+
