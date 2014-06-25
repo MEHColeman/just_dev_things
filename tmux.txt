@@ -11,6 +11,9 @@ ctrl-t : <command>
          list-sessions
          kill-session -t session_name
 
+tmux switch -t session_name   switch to a session
+tmux detach (or ctrl-t d)     detach from session
+
 ## Shortcuts
 
 I have my tmux key bound to ctrl-t, so:
