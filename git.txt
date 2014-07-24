@@ -14,7 +14,11 @@
   git lg        # pretty, longer log
   git pl        # pretty log
 
-## Interactive rebasing
+## Rebasing
+
+Unwind the current branch and replay all the changes onto the tip of the named branch.
+
+### Interactive rebasing
 
   git rebase -i <ref to root of rebase>
 Then, pick edit or squash (onto previous) commits. Delete the line to remove
