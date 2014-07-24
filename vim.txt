@@ -84,3 +84,12 @@ script:
 
 delete all lines except those that contain "error" or "warn" or "fail"
 :v/error\|warn\|fail/d
+
+## Surrounding things
+cs "'          swap "" to ''
+cs '<blah>     swap ' to <blah></blah>
+ci"            change all in ""
+
+i## Buffers
+ayy = copy to buffer a
+ap  = paste from buffer b
