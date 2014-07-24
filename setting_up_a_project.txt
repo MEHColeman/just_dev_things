@@ -1,4 +1,4 @@
-create a .ruvy-version and .ruby-gemset , Gemfile, spec directory with a standard structure,
+create a .ruby-version and .ruby-gemset, Gemfile, spec directory with a standard structure,
 feature directory, if appropriate.
 set up guard files & watch as the magic happens.
 
@@ -22,3 +22,6 @@ flay
 
 
 also, code climate
+
+Think about models and their associations. User stories (prioritised).
+Write a README.
