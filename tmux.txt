@@ -29,6 +29,8 @@ ctrl-t s = split horizontal
        | = arrange panes vertically
        - = arrange panes horizontally
        x = kill pane
+       z = toggle zoom pane to full size
+       space = sycle through change arrangements
 
 alt-arrow = resize panes
 ctrl-alt-arrow = resize panes in steps of 5
