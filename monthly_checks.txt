@@ -1,6 +1,13 @@
 ## Monthly
 Vundler BundleUpdate
+.rbenv git pull
+sync .dotfiles git repo
+sync notes git repo
+(on a mac) brew update && brew outdated
+brew upgrade [formula]
 
+sudo apt-get update
+sudo apt-get upgrade
 
 ## Notes
 Oh-my-zsh updates itself weekly.
