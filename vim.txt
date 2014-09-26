@@ -90,6 +90,51 @@ cs "'          swap "" to ''
 cs '<blah>     swap ' to <blah></blah>
 ci"            change all in ""
 
-i## Buffers
+## Buffers
 ayy = copy to buffer a
 ap  = paste from buffer b
+
+## Fugitive
+
+Fugitive is awesome!
+
+Things you can do:
+:Gstatus - editable git status. i
+  - to toggle current file between staged and unstaged
+  p to patch current file
+  <enter> to open the current file
+  C to commit (by adding a commit message)
+Navigate files with ctrl-n and ctrl-p to navigate files
+
+:Gdiff - run a vimdiff on the current file (index | working copy)
+  :Gwrite - write the working copy to the index, or vice versa!
+  :Gread - the other way round
+  :diffget - (a vim command) get the change from the other diffed file) (do)
+  :diffput - (a vim command) put the change to the other diffed file) (dp)
+  :diffupdate - update vimdiff formatting
+
+:Gedit <file> (or :0 for current file) to edit the git index version of a file
+
+Merge conflicts: 3-way vimdiff
+target branch | working copy | merge branch
+Now you will need to use :diffget and :diffput with the bufspec or buffer name.
+You can wind out what these are with :ls
+
+]c and [c to jump between conflicts.
+dp shortcut to :diffput <target> | diffup that assumes target is working copy.
+
+:Gedit branch:path/to/file - open a read-only copy of file on another branch
+:Gedit branch:% etc
+:Gedit <sha> - to view the commit info, interactively. <enter> on objects to see more
+
+:Glog - loo
+:Glog -- show list of commits in quickfix list
+:Glog -- % show list of commits involving current file in quickfix
+:Glog --grep=text --  grep the commit messages for text
+:Glog -Stext   to grep within commit diffs
+:Ggrep text branch   to git grep into quickfix
+
+Quickfix
+:cn(ext) open next file
+:copen open file under cursor
+:cnf open first file.
