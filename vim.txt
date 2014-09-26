@@ -99,7 +99,7 @@ ap  = paste from buffer b
 Fugitive is awesome!
 
 Things you can do:
-:Gstatus - editable git status. i
+:Gstatus - editable git status
   - to toggle current file between staged and unstaged
   p to patch current file
   <enter> to open the current file
@@ -121,7 +121,7 @@ Now you will need to use :diffget and :diffput with the bufspec or buffer name.
 You can wind out what these are with :ls
 
 ]c and [c to jump between conflicts.
-dp shortcut to :diffput <target> | diffup that assumes target is working copy.
+:dp shortcut to :diffput <target> | diffup that assumes target is working copy.
 
 :Gedit branch:path/to/file - open a read-only copy of file on another branch
 :Gedit branch:% etc
