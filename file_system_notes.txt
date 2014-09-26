@@ -1,4 +1,12 @@
-/usr is for usr installed stuff
+The *nix filesystem hierarchy standard
+
+The wikipedia page is usually good enough: https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard
+The full spec is here: http://www.pathname.com/fhs/pub/fhs-2.3.html
+
+You can also see `man hier`
+
+/usr is for user installed stuff
+(MacOS brew likes it here)
 /local is for stuff that's installed manually, not with a package
 manager.
 /share is for non binary stuff
