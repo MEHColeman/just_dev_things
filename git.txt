@@ -14,6 +14,10 @@
   git lg        # pretty, longer log
   git pl        # pretty log
 
+## Merging
+
+Merge the named branch onto the current branch
+
 ## Rebasing
 
 Unwind the current branch and replay all the changes onto the tip of the named branch.
