@@ -138,3 +138,25 @@ Quickfix
 :cn(ext) open next file
 :copen open file under cursor
 :cnf open first file.
+
+Refactoring Ruby
+:RAddParameter           - Add Parameter
+:RInlineTemp             - Inline Temp
+:RConvertPostConditional - Convert Post Conditional
+:RExtractConstant        - Extract Constant          (visual selection)
+:RExtractLet             - Extract to Let (Rspec)
+:RExtractLocalVariable   - Extract Local Variable    (visual selection)
+:RRenameLocalVariable    - Rename Local Variable     (visual selection/variable under the cursor, *REQUIRES matchit.vim*)
+:RRenameInstanceVariable - Rename Instance Variable  (visual selection, *REQUIRES matchit.vim*)
+:RExtractMethod          - Extract Method            (visual selection, *REQUIRES matchit.vim*)
+
+:nnoremap <leader>rap  :RAddParameter<cr>
+:nnoremap <leader>rcpc :RConvertPostConditional<cr>
+:nnoremap <leader>rel  :RExtractLet<cr>
+:vnoremap <leader>rec  :RExtractConstant<cr>
+:vnoremap <leader>relv :RExtractLocalVariable<cr>
+:nnoremap <leader>rit  :RInlineTemp<cr>
+:vnoremap <leader>rrlv :RRenameLocalVariable<cr>
+:vnoremap <leader>rriv :RRenameInstanceVariable<cr>
+:vnoremap <leader>rem  :RExtractMethod<cr>
+
