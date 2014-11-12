@@ -31,6 +31,7 @@ ctrl-t s = split horizontal
        x = kill pane
        z = toggle zoom pane to full size
        space = sycle through change arrangements
+:setw synchronize-panes = send output to all panes
 
 alt-arrow = resize panes
 ctrl-alt-arrow = resize panes in steps of 5
