@@ -23,3 +23,13 @@ Assume that the gem is using semantic versioning, and use the lowest version
 that contains the api features you need.
 Only increase the requirement if a bug stops the gem from working.
 
+
+Keeping the gems you use up-to-date
+gemnasium will automatically inform you when your gems are out of date, or you
+could use 'bundle outdated'
+..then
+  bundle update gemname
+will update the gem *and* its dependency tree to the most recent version
+available, according to the Gemfile restrictions.
+  bundle update --source gemname
+will just update the specified gem, but not any of its dependencies.
