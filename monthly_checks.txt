@@ -1,6 +1,8 @@
 ## Monthly
 Vundler BundleUpdate
 .rbenv git pull
+.rbenv/plugins/ruby-build git pull
+
 sync .dotfiles git repo
 sync notes git repo
 (on a mac) brew update && brew outdated
