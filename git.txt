@@ -13,6 +13,7 @@
   git shlg      # pretty, compact log
   git lg        # pretty, longer log
   git pl        # pretty log
+  git diff --stat <ref>     # bar chart of changes
 
 ## Merging
 
