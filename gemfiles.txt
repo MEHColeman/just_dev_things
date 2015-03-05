@@ -22,22 +22,28 @@ wide a variety of configurations as possible.  Therefore you will want to use
 a loose constraint in your gemfile, and only tighten it when you have to (e.g.
 for security fixes, etc)
 
+If your code is a stand-alone piece of software, you have a different set of
+requirements.  In this case, you want a known configuration that you have
+tested and are confident that it works in production.  Often, a more cautious
+approach is required
 
-If your code is a stand-alone piece of software, you have a different set of requirements.
-In this case, you want a known configuration that you have tested and arn confident that it works in production.
-Often, a more cautious approach is required
-
-## The Gemfile and Gemfile.lock
-The when bundler does its thing, it creates a
+## The Gemfile and Gemfile.lock The when bundler does its thing, it creates a
 dependency tree from the Gemfile and creates a Gemfile.lock file that contains
 the dependency requirements and the specific versions of the gems is has
 bundled.  The information in the Gemfile.lock allows you to reproduce the gem
-environment (in terms of gem versions) precisely, which is essetial for
+environment (in terms of gem versions) precisely, which is essential for
 (regression) testing.
 
 ## Recommended approach
 ### For standalone software
-Keep your gemfile as loose as possible. Add restrictions when necessary. Assume semantic versioning, but be careful.
-Keep you Gemfile.lock under version control.
+Keep your gemfile as loose as possible. Add restrictions when necessary. Assume
+semantic versioning, but be careful.
+Keep your Gemfile.lock under version control.
 
 ### For writing gems & libraries
+Keep your gemfile as loose a possible.
+Don't keep you Gemfile.lock under version control.
+In your Gemfile, include references to:
+a) a .local file for any personal tools you may use that, but are not necessary to share
+b) the gemspec
+
