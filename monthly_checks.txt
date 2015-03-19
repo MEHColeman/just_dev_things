@@ -10,7 +10,10 @@ brew upgrade [formula]
 
 sudo apt-get update
 sudo apt-get upgrade (!) or
+sudo apt-get -u upgrade      # get list of upgradeable package
 sudo apt-get install <package>
+sudo apt-get autoremove      # remove unused dependencies of removed packages
+sudo apt-get autoclean       # remove defunct packages from cache
 
 ## Notes
 Oh-my-zsh updates itself weekly.
