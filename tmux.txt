@@ -42,6 +42,9 @@ ctrl-arrow    change pane
 
 ### Moving panes
 ctrl-t {}  left and right
+ctrl-t !   break pane to new window
+ctrl-t V   join pane, split vertically
+ctrl-t S   join pane, split horizontally
 
 ## Windows
 ctrl-t c   new window
