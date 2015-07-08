@@ -1,0 +1,7 @@
+Sometimes you can't use scp to copy files or send large amounts of data around, due to firewalls or file permissions, etc
+(e.g. a streaming database backup)
+
+You may be able to use netcat or ssh directly:
+cat file.gz | ssh user@destination.net "cat - > /new/file/name.gz"
+
+
