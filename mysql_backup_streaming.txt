@@ -1,0 +1,5 @@
+ sudo innobackupex --user=root --password=p4ssw0rd --slave-info --stream=tar /tmp | gzip | ssh mark@db2.zik 'gunzip - | tar -ixvf -C /sql/data/'
+
+...or this worked:
+
+ sudo innobackupex --user=root --password=p4ssw0rd --slave-info --stream=tar /tmp | gzip | ssh mark@db2.zik 'zcat - > /sql/data/temp.tar'
