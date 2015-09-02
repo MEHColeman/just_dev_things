@@ -9,3 +9,9 @@ meta-a toggle sending stdin to all maximised windows
 meta-. minimise a window
 meta-<enter> maximise a window
 meta-j, meta-k, meta-[1-9] change windows
+
+Alternatively, tmux has the options:
+:set synchronize-panes to send dtdin tp all windows
+meta-z to maximise a pane
+meta-! to break a pane to its own window (equivalent of minimising)
+
