@@ -1,0 +1,21 @@
+# Ruby syntax notes
+
+Things like `if account && account.owner && account.owner.address` or
+`account.try(:owner).try(:address)` can now be replaced by
+`account&.owner&.address`
+
+The & safe operator only works for nil, not other falsey values. So there are
+some subltle differences to take care of.
+
+Similarly, `dig` tidies up
+```
+address = params[:account].try(:[], :owner).try(:[], :address)
+
+# or
+
+address = params[:account].fetch(:owner) { {} }.fetch(:address)
+```
+to
+```
+address = params.dig(:account, :owner, :address)
+```
