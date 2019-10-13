@@ -1,6 +1,7 @@
 Create a dedicated user and group on the image, with minimal
 permissions to run the application; use the same user to run this process.
 For example, Node.js image which has a built-in node generic user:
+
 FROM node:10-alpine
 USER node
 CMD node index.js
@@ -36,3 +37,24 @@ docker-compose [start|stop|kill|restart|pause|unpause|rm] \
 
 docker-compose logs [-f] <service name>
 
+“docker-compose exec <service name> <some command>”
+
+# Networking
+
+docker network create <name>
+docker network list
+docker network inspect <network id>
+
+
+# Dev Notes
+Maybe, once its all working, look at using alpine as a base image.
+https://hub.docker.com/_/alpine/
+
+Debugging a dockerfile:
+Stop intermediate files being removed with --rm=false
+docker container run -it --name=debug <container_id> /bin/sh
+
+Tidying up: docker system prune
+
+
+alias ctop='docker run --rm -ti -v /var/run/docker.sock:/var/run/docker.sock quay.io/vektorlab/ctop:latest'
