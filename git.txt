@@ -15,6 +15,9 @@
   git pl        # pretty log
   git diff --stat <ref>     # bar chart of changes
 
+  git blame filename
+  git reflog
+
 ## Merging
 
 Merge the named branch onto the current branch
@@ -150,8 +153,9 @@ $ git pull-request -F prepared-message.md | pbcopy
 $ git push production,staging
 ```
 
-# Git Cherry
-git cherry tag_a tab_b -v
+## Git Cherry
+git cherry tag_a tag_b -v
 will list with a + any commits in tag_b that are not in tag_a
-will list with a - any commits in tab_b that are equivalent to commits in tag_a
+will list with a - any commits in tag_b that are equivalent to commits in tag_a
 So, concentrate on the + commits. They are missing from tag_a
+
