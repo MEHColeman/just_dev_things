@@ -25,10 +25,28 @@ Unwind the current branch and replay all the changes onto the tip of the named b
 
 ### Interactive rebasing
 
+```
   git rebase -i <ref to root of rebase>
+```
 Then, pick edit or squash (onto previous) commits. Delete the line to remove
 You can also change the order of commits.
-Editing allows you to further --amend the message, or split a commit in two:
+Editing allows you to further --amend the message, or split a commit in two.
+
+### Splitting A Commit
+To split the last commit into multiple commits
+```
+git reset HEAD~
+```
+Now add commits the regular way.
+
+To split a commit further in the history:
+```
+pick 123abc bunch of changes
+edit a1b2s3 commit you want to split
+pick abc321 another commit to leave as-is
+
+Once git has reached the point that you've chosen to edit, you can adjust the
+commit as before and then conitnue:
   git reset HEAD^
   git add <half the files>
   git commit
