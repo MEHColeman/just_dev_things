@@ -47,16 +47,22 @@ To split a commit further in the history:
 pick 123abc bunch of changes
 edit a1b2s3 commit you want to split
 pick abc321 another commit to leave as-is
+```
 
 Once git has reached the point that you've chosen to edit, you can adjust the
 commit as before and then conitnue:
+```
   git reset HEAD^
   git add <half the files>
   git commit
   git add <other half>
   git commit
   git rebase --continue
-
+```
+## Moving a branch pointer
+```
+  git branch -f name_of_branch_to_move commit_ref_to_point_to
+```
 # Github hub extensions
 [Taken from https://hub.github.com/]
 ## As a contributor to open-source
