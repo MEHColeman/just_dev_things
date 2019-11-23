@@ -1,0 +1,15 @@
+download a raspbian lite image (<500M)
+write that image to an SD card with etcher
+touch a file in the home directory called ssh
+ssh in - pi raspbian
+
+ sudo raspi-config
+  update the software
+  network options: change hostname
+
+  cat >> /etc/dhcpcd.conf
+  interface eth0
+  static ip_address=192.168.1.238/24
+  static routers=192.168.1.1
+  static domain_name_servers=8.8.8.8
+
