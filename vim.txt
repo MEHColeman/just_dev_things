@@ -23,6 +23,17 @@
   :w     # save a file with a new name, continue editing the old name
   :w %:h/filename  # save filename in home directory of current file
 
+Copy and Pasting
+
+y will yank the target into a buffer
+p will paste buffer after cursor
+P will paste buffer before cursor
+
+ayy = copy to buffer a
+ap  = paste from buffer b
+
+"+y = copy to OS copy buffer
+
 ## Tabs
   :tabnew   # create a new tab
   :tabclose # close tab
@@ -91,10 +102,7 @@ delete all lines except those that contain "error" or "warn" or "fail"
 cs "'          swap "" to ''
 cs '<blah>     swap ' to <blah></blah>
 ci"            change all in ""
-
-## Buffers
-ayy = copy to buffer a
-ap  = paste from buffer b
+ysiw *         surround the current word with *
 
 ## Fugitive
 

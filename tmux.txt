@@ -57,8 +57,13 @@ set-option -p allow-rename off
 
 ## Copy and paste
 ctrl-t [  enter copy mode
-space     start copying
+space     start selection mode
+V         select block mode
+v         toggle block mode
 enter     copy buffer and exit mode
+
+ctrl-c or esc will cancel
+
 ctrl-t ]  paste buffer
        #  List all paste buffers.
        -  Delete the most recently copied buffer of text.
