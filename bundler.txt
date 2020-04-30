@@ -2,7 +2,6 @@ My new gems / ruby environment strategy:
 
 I'm now using rbenv to manage ruby.
 
-
 I've configured bundle (using bundle config --global path vendor/bundler)
 to install all gems in a local vendor directory.
 
