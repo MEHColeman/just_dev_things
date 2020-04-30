@@ -35,6 +35,27 @@ Then, pick edit or squash (onto previous) commits. Delete the line to remove
 You can also change the order of commits.
 Editing allows you to further --amend the message, or split a commit in two.
 
+
+### Merge conflicts
+I have 3 way diffs configured in gitconfig:
+```
+[merge]
+  conflictstyle = diff3
+```
+
+Git nomenclature is pretty poor for this. Here is what the three sections are telling you:
+```
+<<<<< the commit you are trying to apply
+Your changes here
+||||||
+common ancestor to both commits
+original file here
+======
+commit that is causing conflict with the commit you are trying to apply
+>>>>>
+```
+
+
 ### Splitting A Commit
 To split the last commit into multiple commits
 ```
