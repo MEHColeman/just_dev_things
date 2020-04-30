@@ -80,6 +80,18 @@ commit as before and then continue:
   git commit
   git rebase --continue
 ```
+
+I also like to use
+```
+git add -p
+```
+to interactively add commit segments. Also, see the vim tool that is very useful.
+
+To interactively add segments of a new file, you need git to start tracking the new file first.
+```
+git add -N filename
+```
+
 ## Moving a branch pointer
 ```
   git branch -f name_of_branch_to_move commit_ref_to_point_to
