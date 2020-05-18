@@ -1,5 +1,8 @@
 # Git
 
+See [git flight rules](https://github.com/k88hudson/git-flight-rules) for useful
+notes.
+
 ## Stashing
 
   git stash save "message"
