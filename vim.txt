@@ -16,12 +16,15 @@
 
 ## New files
   :e filename    # start editing a new file
+  or, in NERDTree, press m, and (a) from the context menu
+
 ## Writing files
   :sudowrite   write protected file (via eunuch plugin)
 
   :sav   # save a file with a new name, continue editing the new name
   :w     # save a file with a new name, continue editing the old name
   :w %:h/filename  # save filename in home directory of current file
+
 
 Copy and Pasting
 
