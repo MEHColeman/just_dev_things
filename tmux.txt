@@ -69,4 +69,9 @@ ctrl-t ]  paste buffer
        -  Delete the most recently copied buffer of text.
        =  Choose which buffer to paste interactively from a list.
 
+## Tmuxifier
 
+Can create common pane configurations for easy access.
+e.g.
+tmuxifier load-window notes
+tmuxifier load-window batch-dl
