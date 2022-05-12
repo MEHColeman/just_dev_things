@@ -108,7 +108,16 @@ git show framework:cv.md > old_cv.md
 ```
   git branch -f name_of_branch_to_move commit_ref_to_point_to
 ```
-# Github hub extensions
+
+
+
+
+
+
+## Github hub extensions
+
+Github has a lot of features accessible with ```hub```
+
 [Taken from https://hub.github.com/]
 ## As a contributor to open-source
 Whether you are beginner or an experienced contributor to open-source, hub makes it easier to fetch repositories, navigate project pages, fork repos and even submit pull requests, all from the command-line.
@@ -129,6 +138,7 @@ $ git browse -- issues
 # open another project's wiki
 $ git browse mojombo/jekyll wiki
 → open https://github.com/mojombo/jekyll/wiki
+
 # Example workflow for contributing to a project:
 $ git clone github/hub
 $ cd hub
@@ -184,7 +194,7 @@ $ git compare -u feature | pbcopy
 # create a repo for a new project
 $ git init
 $ git add . && git commit -m "It begins."
-$ git create -d "My new thing"
+$ hub create -d "My new thing"
 → (creates a new project on GitHub with the name of current directory)
 $ git push origin master
 ```
@@ -210,16 +220,12 @@ will list with a + any commits in tag_b that are not in tag_a
 will list with a - any commits in tag_b that are equivalent to commits in tag_a
 So, concentrate on the + commits. They are missing from tag_a
 
-
 Git Stash
 
 ```git stash show``` will show a very brief list of files that were saved in the stash
 ```git stash show -p``` will show the changes vs the current HEAD
 You can specify the stash you wish to compare: ```git stash show -p stash@{2}```
 
-
-## Github
-Github has a lot of features accessible with ```hub```
 To set an upstream tracking branch:
 ```
 git push -u <remote> <branch>
