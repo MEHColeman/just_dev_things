@@ -25,7 +25,6 @@
   :w     # save a file with a new name, continue editing the old name
   :w %:h/filename  # save filename in home directory of current file
 
-
 Copy and Pasting
 
 y will yank the target into a buffer

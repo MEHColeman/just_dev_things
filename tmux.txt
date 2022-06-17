@@ -23,6 +23,8 @@ ctrl-t r = reload tmux conf
        ? = show shortcuts
 
 ## Panes
+To see the pane ids:
+ctrl-t q = flash pane ids on screen
 
 ctrl-t s = split horizontal
        v = split vertical
