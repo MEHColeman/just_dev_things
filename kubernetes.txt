@@ -1,8 +1,0 @@
-
-brew install kubectx
-
-kubens - list namespaces
-kubens <namespace> - set default namespace
-
-
-
